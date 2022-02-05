@@ -6,6 +6,12 @@
 
 
 
+niedziela:
+1. json z opisami pl en
+2. obsługa języków
+3. widok z projektami zacząć
+
+
 todo 1. podzielić css na kilka plików zgodnie z użyciem
 todo 2. dodać jsona z tekstami które js załaduje do htmla dla wybranej wersji językowej
 todo 4. wybrana wersja językowa podświetlona na czerwono (ten z palety)

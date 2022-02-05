@@ -1,0 +1,77 @@
+body.bright-mode{
+    background-color: #fffaee;;
+}
+
+#contact.bright-mode #contact-options form{
+    border-color: #121212;
+}
+
+#welcome.bright-mode h1,
+#welcome.bright-mode h2{
+    color: #121212;
+}
+
+.cursor.bright-mode,
+.section.bright-mode #grid-container{
+    border-color: black;
+}
+
+#icons.bright-mode *,
+#page_nr.bright-mode,
+#lang_choose.bright-mode span,
+#lang_choose.bright-mode a:last-child,
+.section.bright-mode,
+#contact.bright-mode #contact-options #desc a{
+    color: black;
+}
+
+#contact.bright-mode #contact-options form input, #contact.bright-mode #contact-options form textarea{
+    background-color: #fffaee;
+    border-color: #121212;
+    color: black;
+}
+
+#contact.bright-mode #contact-options form input:-webkit-autofill,
+#contact.bright-mode #contact-options form input:-webkit-autofill:hover,
+#contact.bright-mode #contact-options form input:-webkit-autofill:active,
+#contact.bright-mode #contact-options form input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #fffaee inset !important;
+    -webkit-text-fill-color: black !important;
+}
+
+#contact.bright-mode #contact-options #desc #fb:hover{
+    color: #4267B2;
+}
+
+#contact.bright-mode #contact-options #desc #linkedin:hover{
+    color: #0e76a8;
+}
+
+#burger-nav-elements.bright-mode ul li::after{
+    border-color: white;
+}
+
+#projects.bright-mode #more_projects::after, #projects.bright-mode #more_projects:before{
+    border-color: black;
+}
+
+#projects.bright-mode #more_projects{
+    color: black;
+    background-color: #fffaee;
+}
+
+.section.bright-mode .title{
+    color: #3D3D3D;
+}
+
+#nav.bright-mode .nav-belt{
+    background-color: black;
+}
+
+#burger-nav-elements.bright-mode{
+    background-color: #121212;
+}
+
+#burger-nav-elements.bright-mode ul li a{
+    color: white;
+}
