@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damian Cyper - portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5a9c0a0802.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="cursor"></div>
+    <div id="page_nr"><span>01</span>/<span>05</span></div>
+    <div id="lang_choose"><a>PL</a><span>/</span><a>EN</a></div>
+    <a id="nav" onclick="burgerNavigation()">
+        <div class="nav-belt"></div>
+        <div class="nav-belt"></div>
+        <div class="nav-belt"></div>
+    </a>
+    <div id="burger-nav-elements">
+        <ul>
+            <li>
+                <a onclick="closeNav()" href="#welcome">Strona Główna</a>
+            </li>
+            <li>
+                <a onclick="closeNav()" href="#about_me">O mnie</a>
+            </li>
+            <li>
+                <a onclick="closeNav()" href="#skills">Umiejętności</a>
+            </li>
+            <li>
+                <a onclick="closeNav()" href="#projects">Projekty</a>
+            </li>
+            <li>
+                <a onclick="closeNav()" href="#contact">Kontakt</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="welcome">
+        <h1>Damian Cyper</h1>
+            <h2>
+                <div class="scroller">
+                    <span>
+                        Frontend
+                        Java
+                        Python
+                        C/C++
+                        Scala
+                    </span>
+                </div>
+                Developer
+            </h2>
+
+    </div>
+    <div id="icons">
+        <a class="fab fa-facebook" href="https://www.facebook.com/damian.cyper/"></a>
+        <a class="fab fa-github" href="https://github.com/dmncp"></a>
+        <a class="fas fa-envelope" href="mailto:damiancyper@gmail.com"></a>
+    </div>
+
+    <div id="about_me">
+        <h1 class="title">O mnie</h1>
+        <p class="desc">
+            Cześć!<br>
+            Nazywam się Damian Cyper.
+            Jestem studentem informatyki na Akademii Górniczo-Hutniczej im. Stanisława Staszica w Krakowie.
+            Tworzeniem stron internetowych zacząłem zajmować się niespełna dwa lata temu.
+            Od tamtego momentu ciągle powiększam swoją wiedzę w zakresie web developmentu
+            i zdobywam cenne doświadczenie wykonując wiele ciekawych projektów.
+            Poza web developmentem na co dzień pracuję w Javie, Pythonie i Scali.
+            <br><br>
+            <span style="color: #FF0005">Jeżeli jesteś zainteresowany współpracą, skontaktuj się ze mną ;)</span>
+        </p>
+    </div>
+
+    <div id="skills">
+        <h1 class="title">Umiejętności</h1>
+        <div class="desc" id="grind-container">
+            <div class="grid-item">
+                <img src="resources/icons/c_logo.png"><br>
+                C/C++
+            </div>
+            <div class="grid-item">
+                <i class="fab fa-python" style="color: #306998"></i><br>
+                Python
+            </div>
+            <div class="grid-item">
+                <i class="fab fa-java" style="color: #f89820"></i><br>
+                Java
+            </div>
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132220.png"><br>
+                Scala
+            </div>
+            <div class="grid-item">
+                <img src="https://wiki.haskell.org/wikiupload/4/4a/HaskellLogoStyPreview-1.png"><br>
+                Haskell
+            </div>
+            <div class="grid-item">
+                <img src="https://symbols.getvecta.com/stencil_85/53_julia-language-icon.47d1f49cdd.svg"><br>
+                Julia
+            </div>
+            <div class="grid-item">
+                <img style="width: 80px" src="https://static.djangoproject.com/img/logos/django-logo-negative.png"><br>
+                Django
+            </div>
+            <div class="grid-item">
+                <i class="fab fa-js" style="color: yellow"></i><br>
+                JavaScript
+            </div>
+            <div class="grid-item">
+                <i class="fab fa-angular" style="color:#dd1b16;"></i><br>
+                Angular
+            </div>
+            <div class="grid-item">
+                <i class="fab fa-bootstrap" style="color:purple;"></i><br>
+                Bootstrap
+            </div>
+            <div class="grid-item">
+                <i class="fab fa-node-js" style="color: #3c873a"></i><br>
+                Node.js
+            </div>
+            <div class="grid-item">
+                <i class="fab fa-html5" style="color: #e34c26"></i><br>
+                HTML
+            </div>
+            <div class="grid-item">
+                <i class="fab fa-css3-alt" style="color:#264de4;"></i><br>
+                CSS3
+            </div>
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/2777/2777154.png"><br>
+                RWD
+            </div>
+            <div class="grid-item">
+                <img src="https://aws1.discourse-cdn.com/standard17/uploads/threejs/optimized/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751_2_496x500.png"><br>
+                Three.js
+            </div>
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png"><br>
+                Figma
+            </div>
+            <div class="grid-item">
+                <i class="fab fa-ubuntu" style="color: #dd4814"></i><br>
+                Linux Commands
+            </div>
+            <div class="grid-item">
+                <i class="fab fa-github" style="color: white"></i><br>
+                Github
+            </div>
+            <div class="grid-item">
+                <img src="https://mpng.subpng.com/20190306/tg/kisspng-autodesk-maya-computer-icons-portable-network-grap-5c8019ec7cbb67.4418013315518991165109.jpg"><br>
+                Autodesk Maya
+            </div>
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png"><br>
+                SQL
+            </div>
+            <div class="grid-item">
+                <img src="https://www.kindpng.com/picc/m/385-3850482_mongodb-logo-png-transparent-png.png"><br>
+                MongoDB
+            </div>
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/5969/5969170.png"><br>
+                Oracle
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <h1 class="title">Projekty</h1>
+        <div id="projects_list">
+            <div class="project-item">
+                <div class="card-bg"></div>
+                <div class="card-title">
+                    <p>Sklep meblowy</p>
+                    <a>Sprawdź</a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="card-bg"></div>
+                <div class="card-title">
+                    <p>Biuro podróży</p>
+                    <a>Sprawdź</a>
+                </div>
+            </div>
+        </div>
+        <a id="more_projects">Więcej &#8594;</a>
+    </div>
+
+    <div id="contact">
+        <h1 class="title">Kontakt</h1>
+        <p class="desc">
+
+        </p>
+    </div>
+
+    <script src="cursor.js" defer></script>
+    <script src="burgerNavigation.js" defer></script>
+</body>
+</html>

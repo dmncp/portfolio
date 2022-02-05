@@ -1,0 +1,27 @@
+#FF0005 - czerwony
+#FFF28C - żółty
+#959595 - szary jasny
+#3D3D3D - szary ciemny
+#121212 - czarny
+
+
+todo 1. podzielić css na kilka plików zgodnie z użyciem
+todo 2. dodać jsona z tekstami które js załaduje do htmla dla wybranej wersji językowej
+todo 3. zepsół się hover na ikonkach w lewym górnym rogu (tło żółte ma być)
+todo 4. wybrana wersja językowa podświetlona na czerwono (ten z palety)
+todo 5. dodać łapkę kursora gdy jest hover na linku np więcej przy projektach 
+todo 6. może tryb jasny i ciemny
+todo 7. zwiększyć odstępy między paskami w burgerze
+todo 8. zmienić kolor menu burgera z jasno żółego na coś ciemniejszego
+todo 9. kółko od kursora z mniejszym delayem
+todo 10. może jednak usunąć kursor? i wgl delay na 0
+todo 11. może taka fajna płynna animacja zmieniajaca kształt tego kursora z kółka na jakiś x albo inny kształt gdy jest button lub coś klikalnego
+todo 12. buttony "więcej" i "sprawdź" muszą się bardziej wyróżniać, nie widać że to buttony
+todo 13. zrobić cv pdf i dopiąć do strony. poczytać jak zrobić download pliku (wrzuconego w foldery projektu)
+todo 14. zdj
+todo 15. napisy mogłyby wjeżdżać całe po przekroczeniu np 1/3 strony. Nie że wjeżdżają powoli a że ich nie ma i po przekroczeniu np 1/3 strony uruchamia się animacja wysuwająca cały napis. 
+todo 16. po dorzuceniu bootstrapa może zamienić siatkę umiejętności na siatkę bootstrapa bo teraz jest ciągle ryzyko z todo 14 (zdj)
+
+nie zapomnij o rwd
+
+inspiracja: https://www.youtube.com/watch?v=KWVJTRWILjU
