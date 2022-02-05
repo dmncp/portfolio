@@ -3,19 +3,6 @@ let titles = Array.from(document.getElementsByClassName('title'));
 let body = document.body;
 let html = document.documentElement;
 let pageNr = document.getElementById('page_nr');
-let docHeight = getEntireDocumentHeight();
-
-pageNr.children[1].textContent = `0${Math.floor(getPageNr(docHeight))}`;
-
-
-function getPageNr(value){
-    return Math.round(value / 1000 );
-}
-
-function getEntireDocumentHeight(){
-    return  Math.max( body.scrollHeight, body.offsetHeight,
-        html.clientHeight, html.scrollHeight, html.offsetHeight );
-}
 
 
 window.addEventListener("mousemove", function (event){
@@ -44,29 +31,46 @@ window.addEventListener("mouseover", function (event){
 })
 
 document.addEventListener("scroll", function (){
-    console.log(body.scrollHeight, body.offsetHeight,
-        html.clientHeight, html.scrollHeight, html.offsetHeight, window.scrollY, window.innerHeight, window.screen.height, window.screen.availHeight)
-
-
     let scroll = window.scrollY;
+    let h = window.screen.availHeight;
 
     titles.forEach((title, id) =>{
-        if(scroll <= window.screen.height * (id + 1)){
-            let amount = (id + 1)*(-50) + (scroll * 0.06);
-            title.style.left = `${Math.min(amount, 0)}%`;
+        let titleOffset = title.getBoundingClientRect().top;
+
+        if(titleOffset <= 400){
+            title.style.left = `0`;
         }
+        else{
+            title.style.left = '-100%';
+        }
+        if(titleOffset <= 400 && titleOffset >= 0){ // if time to change page nr
+            // change page number
+            pageNr.firstChild.textContent = `0${id+2}`
+        }
+
     })
 
-    // change page number
-    pageNr.firstChild.textContent = `0${Math.floor(scroll / window.innerHeight) + 1}`;
-
+    // if user go back to home page
+    if(titles[0].getBoundingClientRect().top >= h){
+        pageNr.firstChild.textContent = '01';
+    }
 
     //projects card animation
     let cards = document.getElementsByClassName("project-item");
-    if(scroll <= window.screen.height * 4){ // 4 - page nr
-        let amount1 = -200 + (scroll * 0.075);
-        let amount2 = 200 - (scroll * 0.075);
-        cards[0].style.left = `${Math.min(amount1, 0)}%`;
-        cards[1].style.left = `${Math.max(amount2, 0)}%`;
+    let firstCardOffset = cards[0].getBoundingClientRect().top;
+    let secondCardOffset = cards[1].getBoundingClientRect().top;
+
+    if(firstCardOffset <= 400){
+        cards[0].style.left = '0';
+    }
+    else{
+        cards[0].style.left = '-100%';
+    }
+
+    if(secondCardOffset <= 400){
+        cards[1].style.left = '0';
+    }
+    else{
+        cards[1].style.left = '100%';
     }
 })

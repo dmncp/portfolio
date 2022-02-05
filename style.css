@@ -1,8 +1,13 @@
 *{
+    cursor: none;
     overflow-x: hidden;
 }
 body{
     background-color: #121212;
+}
+
+::selection{
+    background-color: rgba(255, 242, 140, 0.47);
 }
 
 #welcome{
@@ -39,7 +44,7 @@ body{
     position: absolute;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    transition: all 0.4s ease-out;
+    /*transition: all 0.4s ease-out;*/
     z-index: 10;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px); /*background blur*/
@@ -159,9 +164,9 @@ li a, li a:link, li a:visited{
 .nav-belt{
     display: block;
     height: 3px;
-    border-radius: 30px;
+    border-radius: 40px;
     background-color: white;
-    margin: 5px auto;
+    margin: 6px auto;
     z-index: 3;
     position: relative;
 }
@@ -269,6 +274,7 @@ img{
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    transition: all 1s linear;
 }
 
 .project-item:first-child{
@@ -297,6 +303,7 @@ img{
 .card-title a{
     color: black;
     padding: 0 0 15px 0;
+    font-family: 'Rubik', sans-serif;
 }
 
 .card-bg{
