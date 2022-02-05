@@ -1,6 +1,7 @@
 let mouseCursor = document.getElementsByClassName("cursor")[0];
 let titles = Array.from(document.getElementsByClassName('title'));
 let pageNr = document.getElementById('page_nr');
+let gridItems = Array.from(document.getElementsByClassName("grid-item"));
 
 
 window.addEventListener("mousemove", function (event){
@@ -32,7 +33,6 @@ window.addEventListener("mouseover", function (event){
 })
 
 document.addEventListener("scroll", function (){
-    let scroll = window.scrollY;
     let h = window.screen.availHeight;
 
     titles.forEach((title, id) =>{
@@ -54,6 +54,12 @@ document.addEventListener("scroll", function (){
     // if user go back to home page
     if(titles[0].getBoundingClientRect().top >= h){
         pageNr.firstChild.textContent = '01';
+    }
+    if(titles[1].getBoundingClientRect().top <= 400){
+        gridItems.forEach(item => item.style.transform = "scale(1)");
+    }
+    else{
+        gridItems.forEach(item => item.style.transform = "scale(0)");
     }
 
     //projects card animation
