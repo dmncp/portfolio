@@ -1,7 +1,5 @@
 let mouseCursor = document.getElementsByClassName("cursor")[0];
 let titles = Array.from(document.getElementsByClassName('title'));
-let body = document.body;
-let html = document.documentElement;
 let pageNr = document.getElementById('page_nr');
 
 
@@ -12,13 +10,16 @@ window.addEventListener("mousemove", function (event){
 
 window.addEventListener("mouseover", function (event){
     if(event.target.nodeName === "DIV"){
-        if(event.target.id === "burger-nav-elements")
-            mouseCursor.style.borderColor = "#000511"
-        else if(event.target.id !== "icons" && event.target.id !== "scroller")
-            mouseCursor.style.borderColor = "#ededed"
+        if(event.target.id === "burger-nav-elements"){
+            mouseCursor.style.borderColor = "#000511";
+        }
+        else if(event.target.id !== "icons" && event.target.id !== "scroller"){
+            mouseCursor.style.borderColor = "#ededed";
+        }
+
     }
 
-    if(event.target.nodeName === "A" || event.target.nodeName === "LI"){
+    if(event.target.nodeName === "A" || event.target.nodeName === "LI" || event.target.nodeName === "BUTTON"){
         mouseCursor.style.backdropFilter = "none";
         mouseCursor.style.width = "3.5rem";
         mouseCursor.style.height = "3.5rem";

@@ -7,13 +7,12 @@
 
 todo 1. podzielić css na kilka plików zgodnie z użyciem
 todo 2. dodać jsona z tekstami które js załaduje do htmla dla wybranej wersji językowej
-todo 3. page nr powinien mieć wyższy zindex bo jest zasłaniany przez obrazki w projektach
+todo 3. form validation
 todo 4. wybrana wersja językowa podświetlona na czerwono (ten z palety)
+todo 5. pointer na hoverach
 todo 6. może tryb jasny i ciemny
-todo 8. zmienić kolor menu burgera z jasno żółego na coś ciemniejszego
 todo 13. zrobić cv pdf i dopiąć do strony. poczytać jak zrobić download pliku (wrzuconego w foldery projektu)
 todo 14. zdj
-todo 15. napisy mogłyby wjeżdżać całe po przekroczeniu np 1/3 strony. Nie że wjeżdżają powoli a że ich nie ma i po przekroczeniu np 1/3 strony uruchamia się animacja wysuwająca cały napis. 
 todo 16. po dorzuceniu bootstrapa może zamienić siatkę umiejętności na siatkę bootstrapa bo teraz jest ciągle ryzyko z todo 14 (zdj)
 
 
@@ -28,3 +27,7 @@ done:
 3. page nr system works
 4. pages titles animation works
 5. projects cards animation
+
+6. z-index on page nr
+7. cursor modification
+8. basic form style and other contact options
