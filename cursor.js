@@ -12,10 +12,14 @@ window.addEventListener("mousemove", function (event){
 window.addEventListener("mouseover", function (event){
     if(event.target.nodeName === "DIV"){
         if(event.target.id === "burger-nav-elements"){
-            mouseCursor.style.borderColor = "#000511";
+            if(toggle.classList.contains("active"))
+                mouseCursor.style.borderColor = "white";
+            else mouseCursor.style.borderColor = "black";
         }
         else if(event.target.id !== "icons" && event.target.id !== "scroller"){
-            mouseCursor.style.borderColor = "#ededed";
+            if(toggle.classList.contains("active"))
+                mouseCursor.style.borderColor = "black";
+            else mouseCursor.style.borderColor = "white";
         }
 
     }

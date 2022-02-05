@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damian Cyper - portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="whiteMode.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
@@ -19,6 +20,10 @@
     <div class="cursor"></div>
     <div id="page_nr"><span>01</span>/05</div>
     <div id="lang_choose"><a>PL</a><span>/</span><a>EN</a></div>
+    <div id="toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
     <a id="nav" onclick="burgerNavigation()">
         <div class="nav-belt"></div>
         <div class="nav-belt"></div>
@@ -26,19 +31,19 @@
     </a>
     <div id="burger-nav-elements">
         <ul>
-            <li>
+            <li class="nav-option">
                 <a onclick="closeNav()" href="#welcome">Strona Główna</a>
             </li>
-            <li>
+            <li class="nav-option">
                 <a onclick="closeNav()" href="#about_me">O mnie</a>
             </li>
-            <li>
+            <li class="nav-option">
                 <a onclick="closeNav()" href="#skills">Umiejętności</a>
             </li>
-            <li>
+            <li class="nav-option">
                 <a onclick="closeNav()" href="#projects">Projekty</a>
             </li>
-            <li>
+            <li class="nav-option">
                 <a onclick="closeNav()" href="#contact">Kontakt</a>
             </li>
         </ul>
@@ -67,7 +72,7 @@
         <a class="fab fa-linkedin" href="#"></a>
     </div>
 
-    <div id="about_me">
+    <div id="about_me" class="section">
         <h1 class="title">O mnie</h1>
         <p class="desc">
             Cześć!<br>
@@ -82,9 +87,9 @@
         </p>
     </div>
 
-    <div id="skills">
+    <div id="skills" class="section">
         <h1 class="title">Umiejętności</h1>
-        <div class="desc" id="grind-container">
+        <div class="desc" id="grid-container">
             <div class="grid-item">
                 <img src="resources/icons/c_logo.png"><br>
                 C/C++
@@ -176,7 +181,7 @@
         </div>
     </div>
 
-    <div id="projects">
+    <div id="projects" class="section">
         <h1 class="title">Projekty</h1>
         <div id="projects_list">
             <div class="project-item">
@@ -197,7 +202,7 @@
         <a id="more_projects">Więcej &#8594;</a>
     </div>
 
-    <div id="contact">
+    <div id="contact" class="section">
         <h1 class="title">Kontakt</h1>
         <div id="contact-options">
             <div id="desc">
@@ -231,5 +236,6 @@
     <script src="cursor.js" defer></script>
     <script src="burgerNavigation.js" defer></script>
     <script src="formHandling.js" type="module" defer></script>
+    <script src="colorChange.js" defer></script>
 </body>
 </html>

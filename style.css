@@ -49,18 +49,6 @@ body{
     backdrop-filter: blur(4px); /*background blur*/
 }
 
-#pointer{
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: white;
-    display: block;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 #icons{
     display: flex;
     margin: 10px;
@@ -126,7 +114,7 @@ li a, li a:link, li a:visited{
     color: #FFF28C;
 }
 
-#about_me, #projects, #contact, #skills{
+.section{
     color: white;
     width: 100vw;
     min-height: 100vh;
@@ -217,7 +205,6 @@ li a, li a:link, li a:visited{
 }
 
 #burger-nav-elements ul{
-    color: black;
     text-align: center;
     font-family: 'Rubik', sans-serif;
     font-size: 40px;
@@ -231,18 +218,19 @@ li{
 }
 
 
-li:after{
+li::after{
     display: block;
     content: '';
     border-bottom: solid 1px black;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
 }
-li:hover:after{
+li:hover::after{
     transform: scaleX(1);
 }
 
-#grind-container{
+
+#grid-container{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     padding: 20px;
@@ -381,7 +369,7 @@ img{
     cursor: pointer;
 }
 
-#more_projects:after, #more_projects:before, .card-title a:after, .card-title a:before{
+#more_projects::after, #more_projects:before, .card-title a::after, .card-title a:before{
     display: block;
     margin-top: 5px;
     content: '';
@@ -390,17 +378,19 @@ img{
     transition: transform 250ms ease-in-out;
 }
 
-.card-title a:after, .card-title a:before{
+
+
+.card-title a::after, .card-title a:before{
     border-color: black;
 }
 
-#more_projects:hover:after, #more_projects:hover:before, .card-title a:hover:after, .card-title a:hover:before{
+#more_projects:hover::after, #more_projects:hover:before, .card-title a:hover::after, .card-title a:hover:before{
     transform: scaleX(1);
 }
 
 
 @media (max-width: 1050px) {
-    #grind-container{
+    #grid-container{
         grid-template-columns: auto auto auto auto;
         padding: 10px;
         margin: 30px auto;
@@ -420,12 +410,12 @@ img{
 }
 
 @media (max-width: 900px) {
-    #grind-container{
+    #grid-container{
         grid-template-columns: auto auto;
     }
 }
 @media (max-width: 500px) {
-    #grind-container{
+    #grid-container{
         grid-template-columns: auto;
     }
 }
@@ -476,8 +466,6 @@ input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0 1000px #121212 inset !important;
     -webkit-text-fill-color: #FFF28C !important;
 }
-
-
 
 textarea{
     min-height: 100px;
@@ -535,5 +523,33 @@ button:hover{
 
 #linkedin:hover{
     color: #0e76a8;
+}
+
+
+#toggle{
+    position: fixed;
+    top: 100%;
+    left: 0;
+    transform: translateY(-100%);
+    z-index: 3;
+    cursor: pointer;
+}
+
+#toggle i:last-child{
+    color: white;
+    font-size: 25px;
+    padding: 30px;
+    display: block;
+}
+
+#toggle.active i:first-child{
+    color: #121212;
+    font-size: 25px;
+    padding: 30px;
+    display: block;
+}
+
+#toggle.active i:last-child, #toggle i:first-child{
+    display: none;;
 }
 
