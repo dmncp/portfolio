@@ -212,14 +212,14 @@
                     <p>Linkedin</p>
                 </a>
             </div>
-            <form>
+            <form onsubmit="return false">
                 <div class="form-item">
                     <label for="email">Twój email</label>
-                    <input id="email" type="email">
+                    <input id="email" type="email" required>
                 </div>
                 <div class="form-item">
                     <label for="msg-desc">W czym mogę Ci pomóc?</label>
-                    <textarea id="msg-desc"></textarea>
+                    <textarea id="msg-desc" required minlength="5"></textarea>
                 </div>
 
                 <button type="submit">Wyślij</button>
@@ -230,5 +230,6 @@
 
     <script src="cursor.js" defer></script>
     <script src="burgerNavigation.js" defer></script>
+    <script src="formHandling.js" type="module" defer></script>
 </body>
 </html>

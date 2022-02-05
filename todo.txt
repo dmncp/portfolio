@@ -7,12 +7,11 @@
 
 todo 1. podzielić css na kilka plików zgodnie z użyciem
 todo 2. dodać jsona z tekstami które js załaduje do htmla dla wybranej wersji językowej
-todo 3. form validation
 todo 4. wybrana wersja językowa podświetlona na czerwono (ten z palety)
 todo 6. może tryb jasny i ciemny
 todo 13. zrobić cv pdf i dopiąć do strony. poczytać jak zrobić download pliku (wrzuconego w foldery projektu)
 todo 16. po dorzuceniu bootstrapa może zamienić siatkę umiejętności na siatkę bootstrapa
-
+todo 17. refactoring
 
 nie zapomnij o rwd
 
@@ -33,3 +32,5 @@ done:
 9. gaps between rows and columns on the skills page
 10. grid items animation
 11. pointer on the hover
+
+12. basic form validation
