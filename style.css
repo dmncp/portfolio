@@ -204,6 +204,10 @@ li a, li a:link, li a:visited{
     z-index: 2;
 }
 
+#burger-nav-elements.active{
+    top: 0;
+}
+
 #burger-nav-elements ul{
     text-align: center;
     font-family: 'Rubik', sans-serif;

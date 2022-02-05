@@ -3,28 +3,26 @@ let langChoose = document.getElementById("lang_choose");
 let nav = Array.from(document.getElementById('nav').children);
 let icons = Array.from(document.getElementById("icons").children);
 
-
 function burgerNavigation(){
-    let topVal = burgerNavigationElement.style.top;
+    burgerNavigationElement.classList.toggle("active");
 
-    if(topVal === "0px"){
+    if(burgerActive()){
         if(toggle.classList.contains("active"))
-            setStyle("black", "-100%");
+            setColors("white");
         else
-            setStyle("white", "-100%");
+            setColors("black");
     }
 
     else{
         if(toggle.classList.contains("active"))
-            setStyle("white", "0");
+            setColors("black");
         else
-            setStyle("black", "0");
+            setColors("white");
     }
 }
 
-function setStyle(color, topValNew){
-    burgerNavigationElement.style.top = topValNew;
-    setColors(color);
+function burgerActive(){
+    return burgerNavigationElement.classList.contains('active');
 }
 
 function setColors(color){
@@ -35,10 +33,12 @@ function setColors(color){
 }
 
 function closeNav(){
+    burgerNavigationElement.classList.remove("active");
+
     if(toggle.classList.contains("active")){
-        setStyle("black", "-100%");
+        setColors("black");
     }
     else{
-        setStyle("white", "-100%");
+        setColors("white");
     }
 }

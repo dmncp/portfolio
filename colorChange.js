@@ -6,12 +6,21 @@ toggle.onclick = function (){
     if(toggle.classList.contains('active')){
         Array.from(document.body.children).forEach(child => child.classList.add('white-mode'));
         document.body.classList.add('white-mode');
-        setColors("white");
+
+        if(burgerActive())
+            setColors("white");
+        else
+            setColors("black");
     }
     else{
         Array.from(document.body.children).forEach(child => child.classList.remove('white-mode'));
         document.body.classList.remove('white-mode');
-        setColors("black");
+
+        if(burgerActive())
+            setColors("black");
+        else
+            setColors("white");
     }
 
 }
+
