@@ -187,18 +187,18 @@
                 <div class="card-bg"></div>
                 <div class="card-title">
                     <p>Sklep meblowy</p>
-                    <a class="check-out">Sprawdź</a>
+                    <a href="https://github.com/dmncp/FurnitureStore" class="check-out">Sprawdź</a>
                 </div>
             </div>
             <div class="project-item">
                 <div class="card-bg"></div>
                 <div class="card-title">
                     <p>Biuro podróży</p>
-                    <a class="check-out">Sprawdź</a>
+                    <a href="https://github.com/dmncp/biuroTurystyczne" class="check-out">Sprawdź</a>
                 </div>
             </div>
         </div>
-        <a id="more_projects">Więcej &#8594;</a>
+        <a id="more_projects" href="pages/projects.html">Więcej &#8594;</a>
     </div>
 
     <div id="contact" class="section">
@@ -232,10 +232,13 @@
 
     </div>
 
+    <script>let path;</script>
     <script src="scripts/cursor.js" defer></script>
+    <script src="scripts/scroll.js" defer></script>
     <script src="scripts/burgerNavigation.js" defer></script>
     <script src="scripts/formHandling.js" type="module" defer></script>
     <script src="scripts/colorChange.js" defer></script>
-    <script src="scripts/changeLanguage.js" defer></script>
+    <script>path = "resources/langSettings.json";</script>
+    <script src="scripts/changeLanguage.js"></script>
 </body>
 </html>

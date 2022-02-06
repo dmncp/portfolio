@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projekty</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/brightMode.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style/projectsTable.css">
+
+
+    <script src="https://kit.fontawesome.com/5a9c0a0802.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div id="page_nr"><span>01</span>/01</div>
+    <div id="lang_choose"><a class="active" onclick="changeLanguage('pl')">PL</a><span>/</span><a onclick="changeLanguage('en')">EN</a></div>
+    <div id="toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+    <a id="nav" onclick="burgerNavigation()">
+        <div class="nav-belt"></div>
+        <div class="nav-belt"></div>
+        <div class="nav-belt"></div>
+    </a>
+    <div id="burger-nav-elements">
+        <ul>
+            <li class="nav-option">
+                <a class="nav-desc" onclick="closeNav()" href="../index.html#welcome">Strona główna</a>
+            </li>
+            <li class="nav-option">
+                <a class="nav-desc" onclick="closeNav()" href="../index.html#about_me">O mnie</a>
+            </li>
+            <li class="nav-option">
+                <a class="nav-desc" onclick="closeNav()" href="../index.html#skills">Umiejętności</a>
+            </li>
+            <li class="nav-option">
+                <a class="nav-desc" onclick="closeNav()" href="../index.html#projects">Projekty</a>
+            </li>
+            <li class="nav-option">
+                <a class="nav-desc" onclick="closeNav()" href="../index.html#contact">Kontakt</a>
+            </li>
+        </ul>
+    </div>
+    <div id="icons">
+        <a class="fab fa-facebook" href="https://www.facebook.com/damian.cyper/"></a>
+        <a class="fab fa-github" href="https://github.com/dmncp"></a>
+        <a class="fas fa-envelope" href="mailto:damiancyper@gmail.com"></a>
+        <a class="fab fa-linkedin" href="#"></a>
+    </div>
+
+    <div id="projects-table">
+        <table>
+            <tr>
+                <td>
+                    <div class="row-title">
+                        <p class="project-title">Sklep meblowy</p>
+                        <p class="id">01</p>
+                    </div>
+                    <div class="technologies">
+                        <p>Python</p>|
+                        <p>Django, Sqlite3</p>
+                    </div>
+                    <p class="project-description">Projekt sklepu meblowego wykonany za pomocą django i sqlite3. Umożliwia użytkownikowi założenie konta lub zalogowanie, przeglądanie produktów dostępnych w sklepie, a także robienie zakupów korzystając z płatności przy odbiorze.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row-title">
+                        <p class="project-title">Archiwum szachowe</p>
+                        <p class="id">02</p>
+                    </div>
+                    <div class="technologies">
+                        <p>Python</p>|
+                        <p>Django, PostgreSql</p>
+                    </div>
+                    <p class="project-description">Archiwum partii szachowych zawierające dane o graczach i szczegóły partii. Użytkownik ma możliwość założenia konta lub zalogowania, filtrowania swoich partii, odtwarzania przebiegu gry, a także dodawania innych użytkowników do listy znajomych i udostępniania im własnych partii.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row-title">
+                        <p class="project-title">Biuro podróży</p>
+                        <p class="id">03</p>
+                    </div>
+                    <div class="technologies">
+                        <p>Angular</p>|
+                        <p>Google Firebase</p>
+                    </div>
+                    <p class="project-description">Projekt biura podróży. Użytkownik może założyć konto lub zalogować się, przeglądać kążdą z ofert, dokonywać rezerwacji (dodawać do koszyka) oraz przeglądać swój profil. Projekt zawiera hierarchiczny system użytkowników: administrator, pracownik, klient VIP oraz zwykły klient. Administrator i pracownik mogą edytować każdą z ofert i dodawać nowe. Administrator może dodatkowo zarządzać kontami użytkowników i usuwać wycieczki. Klient VIP może w odróżnieniu od zwykłego klienta przegląać oferty archiwalne lub niedostępne przez brak miejsc.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row-title">
+                        <p class="project-title">Projekt Bootstrap</p>
+                        <p class="id">04</p>
+                    </div>
+                    <div class="technologies">
+                        <p>HTML, CSS</p>|
+                        <p>Bootstrap</p>
+                    </div>
+                    <p class="project-description">Prosty projekt wykonany przy użyciu HTML i CSS mający na celu przećwiczenie elementów Bootstrapa takich jak: dynamicznie zmieniająca się siatka, tabele, karty. </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row-title">
+                        <p class="project-title">ChartJS</p>
+                        <p class="id">05</p>
+                    </div>
+                    <div class="technologies">
+                        <p>Javascript, HTML, CSS</p>|
+                        <p>RequireJS</p>
+                    </div>
+                    <p class="project-description">Autorska biblioteka javascriptowa do wizualizacji danych za pomocą wykresów kołowych i słupkowych. Opiera sie na rysowaniu wykresów na canvasie.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row-title">
+                        <p class="project-title">Kwadrat i koło</p>
+                        <p class="id">06</p>
+                    </div>
+                    <div class="technologies">
+                        <p>Javascript, HTML, CSS</p>|
+                        <p>Web components</p>
+                    </div>
+                    <p class="project-description">Prosta gra przeglądarkowa rysowana na canvasie. Polega na zbieraniu kwadratów kierując kołem za pomocą klawiatury. Każdy z kwadratów ma swój czas życia który jest wyświetlany i gdy gracz wejdzie na kwadrat to zdobywa tyle punktów ile wynosi pozostały czas życia kwadratu. Gdy kwadrat jest zielony to gracz zdobywa tyle punktów, a gdy czerwony to gracz traci podaną ilość punktów.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row-title">
+                        <p class="project-title">Daleks Game</p>
+                        <p class="id">07</p>
+                    </div>
+                    <div class="technologies">
+                        <p>Java</p>|
+                        <p>Spring, RxJava, JavaFx, SQLite</p>
+                    </div>
+                    <p class="project-description">Gra mająca na celu przetrwanie i jednocześnie wyeliminowanie przeciwników, którzy podążają za graczem starając się do niego jak najbardziej zbliżyć. Kontakt z wrogiem powoduje śmierć gracza. Spotkanie się dwóch wrogów na jednym polu powoduje ich wzajemne zderzenie i wyeliminowanie. Gracz wygrywa gdy wszyscy wrogowie wyeliminują się wzajemnie. Gracz ma do dyspozycji power-upy (teleport i cofnięcie czasu), które mogą upraszczać rozgrywkę. Użytkownik ma do dyspozycji tryb szybkiej gry i tryb kampanii, gdzie do pokonania ma 10 poziomów.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row-title">
+                        <p class="project-title">Labyrinth Game</p>
+                        <p class="id">08</p>
+                    </div>
+                    <div class="technologies">
+                        <p>Java</p>
+                    </div>
+                    <p class="project-description">Prosta gra napisana w języku Java w celu przećwiczenia wzorców projektowych: Builder, Fabryka abstrakcyjna, Singleton. Gracz ma za zadanie wydostać się z labiryntu widząc zaledwie mały fragment mapy.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row-title">
+                        <p class="project-title">Darwin Game</p>
+                        <p class="id">09</p>
+                    </div>
+                    <div class="technologies">
+                        <p>Java</p>
+                    </div>
+                    <p class="project-description">Projekt jest generatorem ewolucji. Stworzony na starcie symulacji zestaw zwierząt może jeść dostępne na mapie rośliny, rozmnażać się i umierać. Każdy zwierzak ma swój własny zestaw genów, który jest po części przekazywany następnym pokoleniom (potomek posiada mix genów rodziców).</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row-title">
+                        <p class="project-title">OSPython</p>
+                        <p class="id">10</p>
+                    </div>
+                    <div class="technologies">
+                        <p>Python</p>|
+                        <p>PyQt5, Google Firebase, fpdf2</p>
+                    </div>
+                    <p class="project-description">Projekt jest aplikacją desktopową wykonaną przy pomocy PyQt5, która pomaga w obsłudze raportów OSP. Głównym zadaniem naszej aplikacji jest możliwość dodawania, edytowania i eksportowania do PDF raportów z akcji. Ma również możliwość dodawania i edycji członków OSP. Aplikacja wszystkie gromadzone dane przechowuje w bazie danych firebase. Dostępne w bazie raporty można przeglądać wybierając je z listy (archiwum raportów). Listę tę można oczywiście filtrować w celu wygodniejszego wyszukiwania raportów. Archiwum jest również sortowane po dacie od najnowszego raportu do najstarszego żeby ułatwić pracę przyszłym użytkownikom. Aplikacja oferuje również możliwość zamknięcia raportu - po wybraniu takiej opcji raport przestaje być edytowalny. Taka funkcja może być użyteczna żeby po wygenerowaniu i wydrukowaniu raportu nie było możliwości edycji przez inne osoby.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row-title">
+                        <p class="project-title">Teoria śladów w eliminacji Gaussa</p>
+                        <p class="id">11</p>
+                    </div>
+                    <div class="technologies">
+                        <p>Scala</p>|
+                        <p>Graphviz</p>
+                    </div>
+                    <p class="project-description">Projekt wykonany w języku scala demonstrujący wykorzystanie teorii śladów we współbieżnej eliminacji Gaussa. Użytkownik może rozwiązać układ równań podany jako macierz, poznać postać normalną Foaty (FNF) dla podanego problemu oraz wygenerować graf zależności Diekerta dla tasków. </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row-title">
+                        <p class="project-title">ChatbotService</p>
+                        <p class="id">12</p>
+                    </div>
+                    <div class="technologies">
+                        <p>Nodejs</p>|
+                        <p>ExpressJS, Google Dialogflow</p>
+                    </div>
+                    <p class="project-description">ChatBot biura podróży wykorzystujący API pogodowe. Pozwala użytkownikowi na rozmowę z chatbotem firmy. Użytkownik może zapytać o statystyki na temat zanieczyszczenia powietrza w dowolnym miejscu na świecie, aktualną pogodę w losowym lub podanym miejsu, pogodę 3-dniową w podanym miejscu, podanie godziny w podanym miejsu na świecie. Chatbot może również zaproponować użytkownikowi ciekawe miejsca podróży w podanej porze roku lub przedstawić aktualną ofertę firmy (listę wycieczek wraz z ceną i krótkim opisem).</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row-title">
+                        <p class="project-title">Smok wawelski</p>
+                        <p class="id">13</p>
+                    </div>
+                    <div class="technologies">
+                        <p>Autodesk Maya</p>
+                    </div>
+                    <p class="project-description">Projekt smoka wawelskiego wykonany w programie Autodesk Maya.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row-title">
+                        <p class="project-title">Balloons Game</p>
+                        <p class="id">14</p>
+                    </div>
+                    <div class="technologies">
+                        <p>Javascript, HTML, CSS</p>
+                    </div>
+                    <p class="project-description">Prosta gra przeglądarkowa, w której gracz strzela do balonów. Ilość zdobywanych punktów zależy od szybkości reakcji gracza. Czas pojawienia się balonu zależy od aktualnej rundy (im dalsza tym krótszy czas).</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row-title">
+                        <p class="project-title">Wcześniejsze portfolio</p>
+                        <p class="id">15</p>
+                    </div>
+                    <div class="technologies">
+                        <p>HTML, CSS</p>
+                    </div>
+                    <p class="project-description">Prosty projekt portfolio wykonany przy użyciu HTML i CSS powstały na początku mojej przygody z web developmentem.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>let path;</script>
+    <script src="../scripts/cursor.js" defer></script>
+    <script src="../scripts/burgerNavigation.js" defer></script>
+    <script src="../scripts/colorChange.js" defer></script>
+    <script>path = "../resources/projectsLang.json";</script>
+    <script src="../scripts/changeLanguage.js"></script>
+</body>
+</html>

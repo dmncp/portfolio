@@ -11,6 +11,7 @@ niedziela:
 
 
 todo 1. podzielić css na kilka plików zgodnie z użyciem
+todo 2. spróbować zrobić jednego głównego htmla i pozostałe które rozszerzają tego głównego dodatkowymi rzeczami żeby nie powielać kodu
 todo 13. zrobić cv pdf i dopiąć do strony. poczytać jak zrobić download pliku (wrzuconego w foldery projektu)
 todo 16. po dorzuceniu bootstrapa może zamienić siatkę umiejętności na siatkę bootstrapa
 todo 17. refactoring

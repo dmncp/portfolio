@@ -1,4 +1,5 @@
-let rawdata = readJsonFile("resources/langSettings.json");
+let rawdata = readJsonFile(path);
+
 let langSettings = JSON.parse(rawdata);
 
 function setLanguage(settings, language){

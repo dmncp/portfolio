@@ -21,7 +21,8 @@ body.bright-mode{
 #lang_choose.bright-mode span,
 #lang_choose.bright-mode a,
 .section.bright-mode,
-#contact.bright-mode #contact-options #desc a{
+#contact.bright-mode #contact-options #desc a,
+#projects-table.bright-mode table{
     color: black;
 }
 
@@ -55,7 +56,9 @@ body.bright-mode{
     border-color: white;
 }
 
-#projects.bright-mode #more_projects::after, #projects.bright-mode #more_projects:before{
+#projects.bright-mode #more_projects::after,
+#projects.bright-mode #more_projects:before,
+#projects-table.bright-mode table tr td{
     border-color: black;
 }
 

@@ -1,0 +1,76 @@
+[
+  {
+    "element": ".project-title",
+    "en": [
+      "Furniture Store",
+      "Chess Archive",
+      "Travel Agency",
+      "Bootstrap Project",
+      "ChartJS",
+      "Rectangle and circle",
+      "Daleks Game",
+      "Labyrinth Game",
+      "Darwin Game",
+      "OSPython",
+      "The trace theory in Gaussian elimination",
+      "ChatbotService",
+      "Wawel Dragon",
+      "Balloons Game",
+      "Earlier portfolio"
+    ],
+    "pl": [
+      "Sklep meblowy",
+      "Archiwum szachowe",
+      "Biuro podróży",
+      "Projekt Bootstrap",
+      "ChartJS",
+      "Kwadrat i koło",
+      "Daleks Game",
+      "Labyrinth Game",
+      "Darwin Game",
+      "OSPython",
+      "Teoria śladów w eliminacji Gaussa",
+      "ChatbotService",
+      "Smok wawelski",
+      "Balloons Game",
+      "Wcześniejsze portfolio"
+    ]
+  },
+  {
+    "element": ".project-description",
+    "en": [
+      "Furniture store project made with django and sqlite3. It allows the user to create an account or log in, view products available in the store, and make purchases using payment on delivery.",
+      "Archive of chess games containing data about the players and details of the game. The user can create an account or log in, filter his games, see the game visualization and add other users to the friends list and share his own games with them.",
+      "Travel agency project. The user can create an account or log in, view any of the offers, make reservations (add to the shopping cart) and view their profile. The project includes a hierarchical system of users: administrator, employee, VIP client and regular client. Administrator and employee can edit each of the offers and add new ones. The administrator can additionally manage user accounts and delete tours. The VIP customer can, unlike the regular customer, view archived offers or those unavailable due to lack of places. ",
+      "A simple project made using HTML and CSS to practice Bootstrap elements such as: dynamically changing grid, tables, cards.",
+      "My own JavaScript library for data visualization using pie and bar charts. It is based on drawing charts on a canvas.",
+      "A simple browser game drawn on a canvas. Collecting squares by steering the blue circle with the keyboard. Each square has its life time which is displayed and when the player enters the square, he scores as many points as the remaining life of the square. When the square is green, then the player scores this number of points, and when red the player loses the given number of points. ",
+      "A game aimed at survival and eliminating the opponents who follow the player, trying to get as close to him as possible. Contact with an enemy causes the death of the player. Meeting two enemies on one field causes them to collide and eliminate each other. The player wins when all the enemies are eliminated. The player has power-ups (teleport and time shifting) at his disposal, which can simplify the gameplay. The user has a quick game mode and a campaign mode, where he has 10 levels to overcome. ",
+      "A simple game written in Java to practice design patterns: Builder, Abstract Factory, Singleton. The player's task is to get out of the maze by seeing only a small fragment of the map.",
+      "The project is an evolution generator. The set of animals created at the start of the simulation can eat plants available on the map, reproduce and die. Each animal has its own set of genes, which is partially passed on to the next generations (the offspring has a mix of parents' genes).",
+      "The project is a desktop application made with PyQt5 that helps in handling volunteer Fire Department reports. The main task of application is the ability to add, edit and export action reports to PDF. It also has the ability to add and edit volunteer Fire Department members. The application stores all collected data in the database. The reports available in the database can be viewed by selecting them from the list (report archive). This list can of course be filtered to make it easier to search for reports. The archive is also sorted by date from the latest report to the oldest one to facilitate the work of future users. The application also offers the option of closing the report - after selecting this option, the report is no longer editable. Such a function may be useful so that after generating and printing the report it would not be possible to edit it by other people. ",
+      "Scala project demonstrating the use of trace theory in concurrent Gaussian elimination. User can solve equation system given as a matrix, find Foata Normal Form (FNF) for given problem and generate Diekert dependency graph for tasks.",
+      "ChatBot of a travel agency using weather API. Allows the user to talk to the company's chatbot. The user can ask for statistics on air pollution anywhere in the world, the current weather in a random or specified place, 3-day weather at a given place, time in a given place in the world. Chatbot can also offer the user interesting places to travel in a given time of the year or present the company's current offer (a list of trips with a price and a short description). ",
+      "Project of the Wawel dragon made in Autodesk Maya.",
+      "A simple browser game in which the player shoots balloons. The number of points scored depends on the speed of the player's reaction. The time the balloon appears depends on the current round (the further round, the shorter the time).",
+      "A simple portfolio design using HTML and CSS was created at the beginning of my adventure with web development."
+    ],
+    "pl": [
+      "Projekt sklepu meblowego wykonany za pomocą django i sqlite3. Umożliwia użytkownikowi założenie konta lub zalogowanie, przeglądanie produktów dostępnych w sklepie, a także robienie zakupów korzystając z płatności przy odbiorze.",
+      "Archiwum partii szachowych zawierające dane o graczach i szczegóły partii. Użytkownik ma możliwość założenia konta lub zalogowania, filtrowania swoich partii, odtwarzania przebiegu gry, a także dodawania innych użytkowników do listy znajomych i udostępniania im własnych partii.",
+      "Projekt biura podróży. Użytkownik może założyć konto lub zalogować się, przeglądać kążdą z ofert, dokonywać rezerwacji (dodawać do koszyka) oraz przeglądać swój profil. Projekt zawiera hierarchiczny system użytkowników: administrator, pracownik, klient VIP oraz zwykły klient. Administrator i pracownik mogą edytować każdą z ofert i dodawać nowe. Administrator może dodatkowo zarządzać kontami użytkowników i usuwać wycieczki. Klient VIP może w odróżnieniu od zwykłego klienta przegląać oferty archiwalne lub niedostępne przez brak miejsc.",
+      "Prosty projekt wykonany przy użyciu HTML i CSS mający na celu przećwiczenie elementów Bootstrapa takich jak: dynamicznie zmieniająca się siatka, tabele, karty.",
+      "Autorska biblioteka javascriptowa do wizualizacji danych za pomocą wykresów kołowych i słupkowych. Opiera sie na rysowaniu wykresów na canvasie.",
+      "Prosta gra przeglądarkowa rysowana na canvasie. Polega na zbieraniu kwadratów kierując kołem za pomocą klawiatury. Każdy z kwadratów ma swój czas życia który jest wyświetlany i gdy gracz wejdzie na kwadrat to zdobywa tyle punktów ile wynosi pozostały czas życia kwadratu. Gdy kwadrat jest zielony to gracz zdobywa tyle punktów, a gdy czerwony to gracz traci podaną ilość punktów.",
+      "Gra mająca na celu przetrwanie i jednocześnie wyeliminowanie przeciwników, którzy podążają za graczem starając się do niego jak najbardziej zbliżyć. Kontakt z wrogiem powoduje śmierć gracza. Spotkanie się dwóch wrogów na jednym polu powoduje ich wzajemne zderzenie i wyeliminowanie. Gracz wygrywa gdy wszyscy wrogowie wyeliminują się wzajemnie. Gracz ma do dyspozycji power-upy (teleport i cofnięcie czasu), które mogą upraszczać rozgrywkę. Użytkownik ma do dyspozycji tryb szybkiej gry i tryb kampanii, gdzie do pokonania ma 10 poziomów.",
+      "Prosta gra napisana w języku Java w celu przećwiczenia wzorców projektowych: Builder, Fabryka abstrakcyjna, Singleton. Gracz ma za zadanie wydostać się z labiryntu widząc zaledwie mały fragment mapy.",
+      "Projekt jest generatorem ewolucji. Stworzony na starcie symulacji zestaw zwierząt może jeść dostępne na mapie rośliny, rozmnażać się i umierać. Każdy zwierzak ma swój własny zestaw genów, który jest po części przekazywany następnym pokoleniom (potomek posiada mix genów rodziców).",
+      "Projekt jest aplikacją desktopową wykonaną przy pomocy PyQt5, która pomaga w obsłudze raportów OSP. Głównym zadaniem naszej aplikacji jest możliwość dodawania, edytowania i eksportowania do PDF raportów z akcji. Ma również możliwość dodawania i edycji członków OSP. Aplikacja wszystkie gromadzone dane przechowuje w bazie danych firebase. Dostępne w bazie raporty można przeglądać wybierając je z listy (archiwum raportów). Listę tę można oczywiście filtrować w celu wygodniejszego wyszukiwania raportów. Archiwum jest również sortowane po dacie od najnowszego raportu do najstarszego żeby ułatwić pracę przyszłym użytkownikom. Aplikacja oferuje również możliwość zamknięcia raportu - po wybraniu takiej opcji raport przestaje być edytowalny. Taka funkcja może być użyteczna żeby po wygenerowaniu i wydrukowaniu raportu nie było możliwości edycji przez inne osoby.",
+      "Projekt wykonany w języku scala demonstrujący wykorzystanie teorii śladów we współbieżnej eliminacji Gaussa. Użytkownik może rozwiązać układ równań podany jako macierz, poznać postać normalną Foaty (FNF) dla podanego problemu oraz wygenerować graf zależności Diekerta dla tasków.",
+      "ChatBot biura podróży wykorzystujący API pogodowe. Pozwala użytkownikowi na rozmowę z chatbotem firmy. Użytkownik może zapytać o statystyki na temat zanieczyszczenia powietrza w dowolnym miejscu na świecie, aktualną pogodę w losowym lub podanym miejsu, pogodę 3-dniową w podanym miejscu, podanie godziny w podanym miejsu na świecie. Chatbot może również zaproponować użytkownikowi ciekawe miejsca podróży w podanej porze roku lub przedstawić aktualną ofertę firmy (listę wycieczek wraz z ceną i krótkim opisem).",
+      "Projekt smoka wawelskiego wykonany w programie Autodesk Maya.",
+      "Prosta gra przeglądarkowa, w której gracz strzela do balonów. Ilość zdobywanych punktów zależy od szybkości reakcji gracza. Czas pojawienia się balonu zależy od aktualnej rundy (im dalsza tym krótszy czas).",
+      "Prosty projekt portfolio wykonany przy użyciu HTML i CSS powstały na początku mojej przygody z web developmentem."
+    ]
+  }
+]
