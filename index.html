@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damian Cyper - portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="brightMode.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/brightMode.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
@@ -14,12 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/5a9c0a0802.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
     <div class="cursor"></div>
     <div id="page_nr"><span>01</span>/05</div>
-    <div id="lang_choose"><a>PL</a><span>/</span><a>EN</a></div>
+    <div id="lang_choose"><a class="active" onclick="changeLanguage('pl')">PL</a><span>/</span><a onclick="changeLanguage('en')">EN</a></div>
     <div id="toggle">
         <i class="fas fa-moon"></i>
         <i class="fas fa-sun"></i>
@@ -32,19 +31,19 @@
     <div id="burger-nav-elements">
         <ul>
             <li class="nav-option">
-                <a onclick="closeNav()" href="#welcome">Strona Główna</a>
+                <a class="nav-desc" onclick="closeNav()" href="#welcome">Strona główna</a>
             </li>
             <li class="nav-option">
-                <a onclick="closeNav()" href="#about_me">O mnie</a>
+                <a class="nav-desc" onclick="closeNav()" href="#about_me">O mnie</a>
             </li>
             <li class="nav-option">
-                <a onclick="closeNav()" href="#skills">Umiejętności</a>
+                <a class="nav-desc" onclick="closeNav()" href="#skills">Umiejętności</a>
             </li>
             <li class="nav-option">
-                <a onclick="closeNav()" href="#projects">Projekty</a>
+                <a class="nav-desc" onclick="closeNav()" href="#projects">Projekty</a>
             </li>
             <li class="nav-option">
-                <a onclick="closeNav()" href="#contact">Kontakt</a>
+                <a class="nav-desc" onclick="closeNav()" href="#contact">Kontakt</a>
             </li>
         </ul>
     </div>
@@ -89,7 +88,7 @@
 
     <div id="skills" class="section">
         <h1 class="title">Umiejętności</h1>
-        <div class="desc" id="grid-container">
+        <div id="grid-container">
             <div class="grid-item">
                 <img src="resources/icons/c_logo.png"><br>
                 C/C++
@@ -188,14 +187,14 @@
                 <div class="card-bg"></div>
                 <div class="card-title">
                     <p>Sklep meblowy</p>
-                    <a>Sprawdź</a>
+                    <a class="check-out">Sprawdź</a>
                 </div>
             </div>
             <div class="project-item">
                 <div class="card-bg"></div>
                 <div class="card-title">
                     <p>Biuro podróży</p>
-                    <a>Sprawdź</a>
+                    <a class="check-out">Sprawdź</a>
                 </div>
             </div>
         </div>
@@ -206,7 +205,7 @@
         <h1 class="title">Kontakt</h1>
         <div id="contact-options">
             <div id="desc">
-                <p>Jeżeli chcesz się ze mną skontaktować, napisz do mnie korzystając z formularza lub z jednego z poniższych sposobów.</p>
+                <p id="contact-desc">Jeżeli chcesz się ze mną skontaktować, napisz do mnie korzystając z formularza lub z jednego z poniższych sposobów.</p>
                 <a id="fb" href="https://www.facebook.com/damian.cyper/">
                     <i class="fab fa-facebook"></i>
                     <p>Facebook</p>
@@ -219,23 +218,24 @@
             </div>
             <form onsubmit="return false">
                 <div class="form-item">
-                    <label for="email">Twój email</label>
+                    <label id="email-label" for="email">Twój email</label>
                     <input id="email" type="email" required>
                 </div>
                 <div class="form-item">
-                    <label for="msg-desc">W czym mogę Ci pomóc?</label>
+                    <label id="msg-desc-label" for="msg-desc">W czym mogę Ci pomóc?</label>
                     <textarea id="msg-desc" required minlength="5"></textarea>
                 </div>
 
-                <button type="submit">Wyślij</button>
+                <button id="submit-button" type="submit">Wyślij</button>
             </form>
         </div>
 
     </div>
 
-    <script src="cursor.js" defer></script>
-    <script src="burgerNavigation.js" defer></script>
-    <script src="formHandling.js" type="module" defer></script>
-    <script src="colorChange.js" defer></script>
+    <script src="scripts/cursor.js" defer></script>
+    <script src="scripts/burgerNavigation.js" defer></script>
+    <script src="scripts/formHandling.js" type="module" defer></script>
+    <script src="scripts/colorChange.js" defer></script>
+    <script src="scripts/changeLanguage.js" defer></script>
 </body>
 </html>

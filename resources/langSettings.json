@@ -1,0 +1,108 @@
+[
+  {
+    "element": ".nav-desc",
+    "en": [
+      "Home",
+      "About me",
+      "Skills",
+      "Projects",
+      "Contact"
+    ],
+    "pl": [
+      "Strona główna",
+      "O mnie",
+      "Umiejętności",
+      "Projekty",
+      "Kontakt"
+    ]
+  },
+  {
+    "element": ".title",
+    "en": [
+      "About me",
+      "Skills",
+      "Projects",
+      "Contact"
+    ],
+    "pl": [
+      "O mnie",
+      "Umiejętności",
+      "Projekty",
+      "Kontakt"
+    ]
+  },
+  {
+    "element": ".desc",
+    "en": [
+      "Hello!<br>\n            I'm Damian Cyper.\n             I am a computer science student at the AGH University of Science and Technology in Krakow.\n              I started creating websites less than two years ago.\n            Since then, I have been constantly increasing my knowledge of web development\n            and I am gaining valuable experience by carrying out many interesting projects.\n            Apart from web development, I work in Java, Python and Scala.\n            <br><br>\n            <span style=\"color: #FF0005\">If you are interested in working with me, please contact me;)</span>\n"
+    ],
+    "pl": [
+      "Cześć!<br>\n            Nazywam się Damian Cyper.\n            Jestem studentem informatyki na Akademii Górniczo-Hutniczej im. Stanisława Staszica w Krakowie.\n            Tworzeniem stron internetowych zacząłem zajmować się niespełna dwa lata temu.\n            Od tamtego momentu ciągle powiększam swoją wiedzę w zakresie web developmentu\n            i zdobywam cenne doświadczenie wykonując wiele ciekawych projektów.\n            Poza web developmentem na co dzień pracuję w Javie, Pythonie i Scali.\n            <br><br>\n            <span style=\"color: #FF0005\">Jeżeli jesteś zainteresowany współpracą, skontaktuj się ze mną ;)</span>\n"
+    ]
+  },
+  {
+    "element": "#contact-desc",
+    "en": [
+      "If you want to contact me, write to me using the form or one of the methods below."
+    ],
+    "pl": [
+      "Jeżeli chcesz się ze mną skontaktować, napisz do mnie korzystając z formularza lub z jednego z poniższych sposobów."
+    ]
+  },
+  {
+    "element": ".card-title p",
+    "en": [
+      "Furniture shop",
+      "Travel agency"
+    ],
+    "pl": [
+      "Sklep meblowy",
+      "Biuro podróży"
+    ]
+  },
+  {
+    "element": ".check-out",
+    "en": [
+      "Check out"
+    ],
+    "pl": [
+      "Sprawdź"
+    ]
+  },
+  {
+    "element": "#more_projects",
+    "en": [
+      "More"
+    ],
+    "pl": [
+      "Więcej"
+    ]
+  },
+  {
+    "element": "#email-label",
+    "en": [
+      "Your email"
+    ],
+    "pl": [
+      "Twój email"
+    ]
+  },
+  {
+    "element": "#msg-desc-label",
+    "en": [
+      "How can I help you?"
+    ],
+    "pl": [
+      "W czym mogę Ci pomóc?"
+    ]
+  },
+  {
+    "element": "#submit-button",
+    "en": [
+      "Send"
+    ],
+    "pl": [
+      "Wyślij"
+    ]
+  }
+]

@@ -102,8 +102,11 @@ li a, li a:link, li a:visited{
     cursor: pointer;
 }
 
-#page_nr span:first-child, #lang_choose a:first-child{
-    color: #FF0005;
+#lang_choose a{
+    color: white;
+}
+#page_nr span:first-child, #lang_choose a.active{
+    color: #FF0005!important;
 }
 
 #lang_choose a:hover{
@@ -134,7 +137,7 @@ li a, li a:link, li a:visited{
     margin: 100px 0 0 40px;
 }
 
-.desc{
+.desc, #grid-container{
     font-family: 'Rubik', sans-serif;
     width: 80vw;
     font-size: 25px;
@@ -343,12 +346,12 @@ img{
 
 
 .project-item:first-child .card-bg{
-    background: url("resources/icons/furniture_project.jpg");
+    background: url("../resources/icons/furniture_project.jpg");
     background-size: cover;
 }
 
 .project-item:last-child .card-bg{
-    background: url("resources/icons/pyramid.jpg");
+    background: url("../resources/icons/pyramid.jpg");
     background-size: cover;
 }
 

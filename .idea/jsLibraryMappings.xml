@@ -2,5 +2,6 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="PROJECT" libraries="{5a9c0a0802, @fortawesome/fontawesome-free, bootstrap, jquery}" />
+    <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>

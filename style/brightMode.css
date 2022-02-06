@@ -19,10 +19,14 @@ body.bright-mode{
 #icons.bright-mode *,
 #page_nr.bright-mode,
 #lang_choose.bright-mode span,
-#lang_choose.bright-mode a:last-child,
+#lang_choose.bright-mode a,
 .section.bright-mode,
 #contact.bright-mode #contact-options #desc a{
     color: black;
+}
+
+#lang_choose.bright-mode a.active{
+    color: #FF0005!important;
 }
 
 #contact.bright-mode #contact-options form input, #contact.bright-mode #contact-options form textarea{

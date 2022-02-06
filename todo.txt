@@ -5,6 +5,9 @@
 #121212 - czarny
 
 
+lang choose: dodać .active żeby zmieniało kolor dla aktywnego na czerwony a nieaktywnego na czarny
+
+
 
 niedziela:
 1. json z opisami pl en
@@ -23,20 +26,3 @@ nie zapomnij o rwd
 
 inspiracja: https://www.youtube.com/watch?v=KWVJTRWILjU
 
-
-done:
-1. delete cursor
-2. linkedin icon and yellow hover
-3. page nr system works
-4. pages titles animation works
-5. projects cards animation
-
-6. z-index on page nr
-7. cursor modification
-8. basic form style and other contact options
-
-9. gaps between rows and columns on the skills page
-10. grid items animation
-11. pointer on the hover
-
-12. basic form validation
