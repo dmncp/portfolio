@@ -58,3 +58,19 @@ td{
 #projects-table{
     min-height: 100vh;
 }
+
+
+@media (max-width: 500px) {
+    .project-title{
+        font-size: 25px;
+    }
+    .technologies p, .project-description{
+        font-size: 15px;
+    }
+    .project-title{
+        width: 80%;
+    }
+    .id{
+        width: 20%;
+    }
+}
