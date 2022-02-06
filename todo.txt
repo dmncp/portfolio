@@ -5,19 +5,12 @@
 #121212 - czarny
 
 
-lang choose: dodać .active żeby zmieniało kolor dla aktywnego na czerwony a nieaktywnego na czarny
-
-
-
 niedziela:
-1. json z opisami pl en
-2. obsługa języków
+
 3. widok z projektami zacząć
 
 
 todo 1. podzielić css na kilka plików zgodnie z użyciem
-todo 2. dodać jsona z tekstami które js załaduje do htmla dla wybranej wersji językowej
-todo 4. wybrana wersja językowa podświetlona na czerwono (ten z palety)
 todo 13. zrobić cv pdf i dopiąć do strony. poczytać jak zrobić download pliku (wrzuconego w foldery projektu)
 todo 16. po dorzuceniu bootstrapa może zamienić siatkę umiejętności na siatkę bootstrapa
 todo 17. refactoring

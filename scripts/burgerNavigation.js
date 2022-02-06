@@ -27,9 +27,18 @@ function burgerActive(){
 
 function setColors(color){
     langChoose.children[1].style.color = color;
-    langChoose.children[2].style.color = color;
+    setColorOnActiveLang(langChoose.children[0], langChoose.children[2], color)
     icons.forEach(child => child.style.color = color);
     nav.forEach(child => child.style.backgroundColor = color);
+}
+
+function setColorOnActiveLang(elem1, elem2, color){
+    if(elem1.classList.contains('active')){
+        elem2.style.color = color;
+    }
+    else{
+        elem1.style.color = color;
+    }
 }
 
 function closeNav(){
