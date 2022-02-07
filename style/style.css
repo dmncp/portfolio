@@ -531,3 +531,13 @@ button:hover{
 #toggle.active i:last-child, #toggle i:first-child{
     display: none;;
 }
+
+
+#footer-icons{
+    background-color: #121212;
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    top: 100%;
+    transform: translateY(-100%);
+}

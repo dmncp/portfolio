@@ -53,6 +53,7 @@
     }
     .title{
         font-size: 8vw;
+        margin-left: 5px;
     }
     #welcome>h1{
         font-size: 50px;
@@ -62,7 +63,30 @@
     }
     #icons{
         flex-direction: column;
+        position: absolute;
     }
+    .cursor{
+        display: none;
+    }
+    #nav, #lang_choose{
+        position: absolute;
+    }
+    table{
+        margin-top: 200px;
+    }
+
+    #more_projects{
+        margin: 0;
+    }
+
+    #contact{
+        margin-top: 100px;
+    }
+
+    #about_me{
+        min-height: 50vh;
+    }
+
 }
 
 @media (max-width: 750px) {
