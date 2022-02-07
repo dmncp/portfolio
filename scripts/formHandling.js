@@ -21,18 +21,19 @@ let description = document.getElementsByTagName("textarea")[0];
 
 
 async function sendEmail() {
-    email.value = "";
-    description.value = "";
+    await addDoc(collection(db, "messages"), {
+        email: email.value,
+        description:description.value
+    });
+
 
     let thanks = document.createElement('p');
     thanks.innerText = "Dziękuję za wysłanie wiadomości. Z pewnością na nią odpowiem :)";
 
     form.appendChild(thanks);
 
-    await addDoc(collection(db, "messages"), {
-        email: email.value,
-        description:description.value
-    });
+    email.value = "";
+    description.value = "";
 }
 
 

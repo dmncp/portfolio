@@ -1,3 +1,5 @@
+let djangoIcon = document.getElementById("django");
+let gitIcon = document.getElementById("git");
 const toggle = document.getElementById("toggle");
 
 toggle.onclick = function (){
@@ -7,6 +9,12 @@ toggle.onclick = function (){
         Array.from(document.body.children).forEach(child => child.classList.add('bright-mode'));
         document.body.classList.add('bright-mode');
 
+        if(djangoIcon !== null && gitIcon !== null){
+            djangoIcon.setAttribute("src", "resources/icons/Django_logo.png")
+            gitIcon.style.color = "black"
+        }
+
+
         if(burgerActive())
             setColors("white");
         else
@@ -15,6 +23,11 @@ toggle.onclick = function (){
     else{
         Array.from(document.body.children).forEach(child => child.classList.remove('bright-mode'));
         document.body.classList.remove('bright-mode');
+
+        if(djangoIcon !== null && gitIcon !== null) {
+            djangoIcon.setAttribute("src", "resources/icons/Django_white.png")
+            gitIcon.style.color = "white"
+        }
 
         if(burgerActive())
             setColors("black");

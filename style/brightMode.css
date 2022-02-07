@@ -22,7 +22,7 @@ body.bright-mode{
 #lang_choose.bright-mode a,
 .section.bright-mode,
 #contact.bright-mode #contact-options #desc a,
-#projects-table.bright-mode table{
+#projects-table.bright-mode table tr td a{
     color: black;
 }
 
