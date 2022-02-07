@@ -24,14 +24,4 @@ window.addEventListener("mouseover", function (event){
 
     }
 
-    if(event.target.nodeName === "A" || event.target.nodeName === "LI" || event.target.nodeName === "BUTTON"){
-        mouseCursor.style.backdropFilter = "none";
-        mouseCursor.style.width = "3.5rem";
-        mouseCursor.style.height = "3.5rem";
-    }
-    else{
-        mouseCursor.style.backdropFilter = "blur(4px)";
-        mouseCursor.style.width = "3rem";
-        mouseCursor.style.height = "3rem";
-    }
 })
