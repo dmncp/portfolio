@@ -365,22 +365,31 @@ img{
     font-family: 'Rubik', sans-serif;
     color: white;
     font-size: 30px;
-    border: none;
-    margin: 20px 0;
+
     outline: none;
     background-color: #121212;
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    box-sizing: content-box;
+
+    display: block;
+
+    border: solid 1px white;
+    padding: 10px;
+    margin-top: 50px;
+    line-height: 50px;
+    transition: all .5s ease-in-out;
 }
 
 #more_projects:hover{
     cursor: pointer;
+    background-color: #FFF28C;
+    color: black;
+    border-color: #FFF28C;
 }
 
-#more_projects::after, #more_projects:before, .card-title a::after, .card-title a:before{
+.card-title a::after, .card-title a:before{ /*#more_projects::after, #more_projects:before, */
     display: block;
     margin-top: 5px;
     content: '';
@@ -395,7 +404,7 @@ img{
     border-color: black;
 }
 
-#more_projects:hover::after, #more_projects:hover:before, .card-title a:hover::after, .card-title a:hover:before{
+ .card-title a:hover::after, .card-title a:hover:before{ /*#more_projects:hover::after, #more_projects:hover:before,*/
     transform: scaleX(1);
 }
 
