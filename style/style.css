@@ -399,65 +399,6 @@ img{
     transform: scaleX(1);
 }
 
-
-@media (max-width: 1050px) {
-    #grid-container{
-        grid-template-columns: auto auto auto auto;
-        padding: 10px;
-        margin: 30px auto;
-    }
-
-    #projects_list{
-        flex-direction: column;
-    }
-
-    .project-item{
-        width: 90vw;
-        margin: 20px auto;
-    }
-    .card-bg{
-        width: 100%;
-    }
-}
-
-@media (max-width: 900px) {
-    #grid-container{
-        grid-template-columns: auto auto;
-    }
-    .project-item{
-        width: 80vw;
-    }
-    #welcome>h1{
-        font-size: 90px;
-    }
-    #welcome>h2{
-        font-size: 30px;
-    }
-}
-@media (max-width: 500px) {
-    #grid-container{
-        grid-template-columns: auto;
-    }
-    .title{
-        font-size: 8vw;
-    }
-    #welcome>h1{
-        font-size: 50px;
-    }
-    #welcome>h2{
-        font-size: 25px;
-    }
-    #icons{
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 750px) {
-    .title{
-        font-size: 10vw;
-    }
-}
-
 form{
     border: 1px solid white;
     width: 50vw;
@@ -589,38 +530,4 @@ button:hover{
 
 #toggle.active i:last-child, #toggle i:first-child{
     display: none;;
-}
-
-@media(max-width: 1230px){
-    #contact-options{
-        flex-direction: column;
-    }
-    form{
-        width: 95vw;
-        margin-bottom: 100px;
-    }
-    #desc{
-        width: 95vw;
-    }
-}
-@media(max-width: 660px){
-    form{
-        width: 90vw;
-        margin-bottom: 100px;
-    }
-    input, textarea{
-        width: 90%;
-    }
-    #desc{
-        width: 90vw;
-    }
-    #welcome>h1{
-        font-size: 70px;
-    }
-    .desc, #contact-desc, #fb, #linkedin{
-        font-size: 20px;
-    }
-    #burger-nav-elements ul{
-        font-size: 25px;
-    }
 }
